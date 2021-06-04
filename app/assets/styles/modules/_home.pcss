@@ -1,0 +1,32 @@
+.home{
+  position: relative;
+  padding: 6rem 2rem;
+  overflow: hidden;
+  &__bubble{
+    position: absolute;
+    border-radius: 50%;
+    width: 150vh;
+    height: 150vh;
+    background-color: $mainColor;
+    right: -65vh;
+    top: -25vh;
+  }
+  &--container{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title{
+    margin-bottom: 2.5rem;
+    font-size: 2.8rem;
+
+    &--wrapper{
+      width: 35rem;
+    }
+  }
+  &--pl-2{
+    padding-left: 8rem;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "pollapp",
+  "version": "1.0.0",
+  "description": "PollApp in vanilla javascript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saraba-alt/PollApp.git"
+  },
+  "author": "Saraba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saraba-alt/PollApp/issues"
+  },
+  "homepage": "https://github.com/Saraba-alt/PollApp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.6",
+    "cssnano": "^5.0.4",
+    "fs-extra": "^10.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "postcss-hexrgba": "^2.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^5.3.0",
+    "postcss-mixins": "^8.0.0",
+    "postcss-nested": "^5.0.5",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-simple-vars": "^6.0.3",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
