@@ -1,5 +1,5 @@
 @define-mixin atSmall {
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     @mixin-content;
   }
 }
@@ -8,8 +8,13 @@
     @mixin-content;
   }
 }
+@define-mixin aboutLarge {
+  @media (min-width: 1065px) {
+    @mixin-content;
+  }
+}
 @define-mixin atLarge {
-  @media (min-width: 1010px) {
+  @media (min-width: 1125px) {
     @mixin-content;
   }
 }

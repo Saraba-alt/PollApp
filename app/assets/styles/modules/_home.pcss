@@ -1,32 +1,78 @@
-.home{
+.home {
   position: relative;
-  padding: 6rem 2rem;
   overflow: hidden;
-  &__bubble{
-    position: absolute;
-    border-radius: 50%;
-    width: 150vh;
-    height: 150vh;
-    background-color: $mainColor;
-    right: -65vh;
-    top: -25vh;
+  z-index: -2;
+  @mixin atLarge {
+    padding: 6rem 2rem;
   }
-  &--container{
+  @mixin atMedium {
+    padding: 0 5rem;
+  }
+  &__bubble {
+    background-color: $mainColor;
+    z-index: 0;
+    border-radius: 50%;
+    position: absolute;
+    width: 150vw;
+    height: 150vw;
+    min-width: 375px;
+    min-height: 375px;
+    top: 22rem;
+    right: calc(-25vw);
+    z-index: -1;
+
+    @mixin atMedium {
+      width: 50rem;
+      height: 50rem;
+      right: calc(-1065px + 70vw);
+      top: calc(50vh - 25rem);
+    }
+    @mixin atLarge {
+      width: 60rem;
+      height: 60rem;
+      right: calc(-1125px + 50vw);
+      top: calc(50vh - 30rem);
+    }
+  }
+  &--container {
     height: 100%;
     width: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
-  &__title{
-    margin-bottom: 2.5rem;
-    font-size: 2.8rem;
-
-    &--wrapper{
-      width: 35rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    @mixin atMedium {
+      justify-content: center;
+      margin: 0;
     }
   }
-  &--pl-2{
-    padding-left: 8rem;
+  &__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    @mixin atMedium {
+      margin-bottom: 2.5rem;
+      font-size: 2.3rem;
+    }
+    @mixin atLarge {
+      font-size: 2.8rem;
+    }
+
+    &--wrapper {
+      max-width: 20rem;
+      @mixin atMedium {
+        max-width: none;
+        width: 28rem;
+      }
+      @mixin atLarge {
+        max-width: none;
+        width: 35rem;
+      }
+    }
+  }
+  &--pl-2 {
+    @mixin atLarge {
+      padding-left: 8rem;
+    }
   }
 }
