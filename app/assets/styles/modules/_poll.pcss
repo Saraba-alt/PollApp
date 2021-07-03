@@ -1,14 +1,27 @@
 .poll {
-  padding: 5rem 10rem;
+  padding: 2rem;
+  @mixin atSmall {
+    font-size: 1.5rem;
+  }
+  @mixin atMedium {
+    font-size: 1rem;
+    padding: 5rem 10rem;
+  }
   &__container {
     display: flex;
     flex-direction: column;
-    width: 38rem;
+    @mixin atMedium {
+      width: 38rem;
+    }
     margin: 0 auto;
   }
   &__btn-container {
     display: flex !important;
     justify-content: space-between;
+    flex-direction: column;
+    @mixin atMedium {
+      flex-direction: row;
+    }
   }
   &__input {
     height: 2.5rem;
@@ -24,7 +37,10 @@
   }
   &__poll-section {
     background-image: linear-gradient(45deg, $mainColor, $secondBlue);
-    height: 60vh;
+    height: 70vh;
+    @mixin atMedium {
+      height: 60vh;
+    }
     border-radius: 0.5rem;
     margin: 1rem 0;
     padding: 0.5rem;
@@ -51,6 +67,10 @@
         padding: 1rem 2rem;
         padding-right: 1.2rem;
         margin: 0.5rem 1rem;
+
+        & > svg {
+          cursor: pointer;
+        }
       }
     }
   }

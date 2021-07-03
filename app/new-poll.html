@@ -10,62 +10,17 @@
     <section class="poll">
       <div class="poll__container">
         <input
+          id="pollInput"
           type="text"
           class="poll__input"
           placeholder="Та текстээ оруулна уу..."
         />
-        <div class="poll__poll-section">
-          <ul>
-            <li>
-              <span>Шинэ сонголт</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 0 24 24"
-                width="24px"
-                fill="#FF4F32"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-                />
-              </svg>
-            </li>
-            <li>
-              <span>Шинэ сонголт</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 0 24 24"
-                width="24px"
-                fill="#FF4F32"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-                />
-              </svg>
-            </li>
-            <li>
-              <span>Шинэ сонголт</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 0 24 24"
-                width="24px"
-                fill="#FF4F32"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-                />
-              </svg>
-            </li>
-          </ul>
+        <div class="poll__poll-section" id="poll-container">
+          <ul id="poll-list"></ul>
         </div>
         <div class="poll__btn-container">
-          <div class="btn btn--main"><a>Нэмэх</a></div>
-          <div class="btn btn--main">Үүсгэх</div>
+          <div class="btn btn--main" id="addBtn"><a>Нэмэх</a></div>
+          <div class="btn btn--main" id="createBtn">Үүсгэх</div>
         </div>
       </div>
     </section>

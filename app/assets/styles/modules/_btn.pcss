@@ -7,6 +7,10 @@
   font-size: 1.1rem;
   cursor: pointer;
   z-index: 10;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   &--round {
     border-radius: 10rem;
   }
@@ -16,6 +20,14 @@
   }
   &--main {
     border-radius: 0.5rem;
-    width: 49%;
+    width: 100%;
+    margin-bottom: 1rem;
+    @mixin atSmall {
+      font-size: 1.5rem;
+    }
+    @mixin atMedium {
+      width: 49%;
+      font-size: 1rem;
+    }
   }
 }
